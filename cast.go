@@ -164,6 +164,16 @@ func ToIntSlice(i interface{}) []int {
 	return v
 }
 
+func ToUint8Slice(i interface{}) []uint8 {
+	v, _ := ToUint8SliceE(i)
+	return v
+}
+
+func ToUint32Slice(i interface{}) []uint32 {
+	v, _ := ToUint32SliceE(i)
+	return v
+}
+
 // ToDurationSlice casts an interface to a []time.Duration type.
 func ToDurationSlice(i interface{}) []time.Duration {
 	v, _ := ToDurationSliceE(i)
