@@ -169,6 +169,11 @@ func ToUint8Slice(i interface{}) []uint8 {
 	return v
 }
 
+func ToUintSlice(i interface{}) []uint {
+	v, _ := ToUintSliceE(i)
+	return v
+}
+
 func ToUint32Slice(i interface{}) []uint32 {
 	v, _ := ToUint32SliceE(i)
 	return v
